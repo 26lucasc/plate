@@ -60,6 +60,10 @@ plate run        # listen in the foreground
 plate install    # or run in the background, starting at login
 ```
 
+Start with `plate run` — Full Disk Access is granted per executable, and you
+just granted it to your terminal. `plate install` runs under its own Python
+interpreter, so it prints the path you need to add before it will work.
+
 Now text a photo of your food. The reply lands in a few seconds.
 
 By text:

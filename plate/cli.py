@@ -250,6 +250,11 @@ def cmd_install(args) -> int:
         print(result.stderr.strip(), file=sys.stderr)
         return 1
     print(f"Plate is running in the background.\nLogs: {config.LOG_PATH}")
+    print()
+    print("Note: macOS grants Full Disk Access per executable. A background service")
+    print("runs under its own interpreter, so grant it to:")
+    print(f"  {sys.executable}")
+    print("System Settings → Privacy & Security → Full Disk Access → + → ⇧⌘G → paste.")
     return 0
 
 
